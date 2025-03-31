@@ -59,4 +59,10 @@
 .run{
   margin-left: 20px;
 }
+.card{
+  border: 3px solid gold;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
 
