@@ -9,7 +9,7 @@ import Friends from './Friend';
 const DataLoded = fetch('https://jsonplaceholder.typicode.com/posts')
 .then(Response => Response.json());
 
-const FriendData= fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
+const FriendData= fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json());
 
 
@@ -20,7 +20,7 @@ function App() {
       <Suspense fallback ={ <h2>Please wait loaded data...</h2>}>
           <Friends Data = {FriendData} ></Friends>
       </Suspense>
-      
+
       <Suspense fallback = { <h2>Data loading....</h2> }>
          <User url = {DataLoded} ></User>
       </Suspense>
