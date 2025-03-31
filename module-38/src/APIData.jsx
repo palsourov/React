@@ -1,5 +1,4 @@
 export default function ApiData({data}){
-    console.log(data);
     
     const {name ,email, id} = data;
     return(
